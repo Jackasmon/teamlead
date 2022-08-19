@@ -1,0 +1,161 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgb(28, 27, 27);
+    border-radius: 40px 40px 0 0;
+
+    &__name {
+        text-align: center;
+        font-style: italic;
+        text-shadow: 2px 2px #7e0e6f;
+        font-size: 60px;
+    }
+
+    &__timer {
+        color: #fff;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../img/compound-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 -30px;
+
+        &-img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 40px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-var {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: #fff;
+            font-weight: bold;
+            align-items: center;
+        }
+
+        &-old {
+            font-size: 30px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 48%;
+                left: 90px;
+                height: 3px;
+                width: 80px;
+                background: rgb(239, 0, 0);
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 42%;
+                left: 90px;
+                height: 3px;
+                width: 80px;
+                background: #ef0000;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &-new {
+            font-size: 50px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            animation-name: bounce-4;
+            animation-timing-function: ease;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-image: -webkit-linear-gradient(90deg, #d08e00 0, #ab612d 50%, #ffea59 100%);
+        min-height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 0 30px 2px #db9200;
+        box-shadow: 0 0 20px 20px rgb(219 146 0 / 57%);
+
+        span {
+            text-align: center;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        &-input {
+            width: 100%;
+            border: 0;
+            padding: 20px 0;
+            text-indent: 20px;
+            outline: 0;
+            color: #000;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-style: italic;
+            border-radius: 10px;
+        }
+    }
+
+    &__btn {
+        @include btn;
+        margin-top: 0;
+
+    }
+
+}
+
+
+
+
+@keyframes bounce-4 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-20px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}

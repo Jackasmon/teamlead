@@ -1,0 +1,157 @@
+@media (max-width: 768px) {
+    .header {
+        padding-top: 20px;
+
+        &__title {
+            font-size: 20px;
+
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__desc {
+            flex-direction: column;
+
+            &-text {
+                align-items: center;
+            }
+
+            &-btn {
+                transform: none;
+                width: 250px;
+            }
+        }
+
+        &__desc-bg {
+            display: none;
+        }
+
+        &__main-img {
+            margin-right: 0;
+        }
+    }
+
+    .compound {
+        background: #000;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            background-position: 49% 50%;
+            background-size: 90%;
+        }
+
+        &__block {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        &__block-desc {
+            color: #fff;
+        }
+    }
+
+    .comment {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__carousel {
+            max-width: 400px;
+        }
+
+        &__carousel-element {
+            flex-direction: column;
+        }
+
+
+        &__desc {
+            font-size: 20px;
+        }
+
+
+        .carousel_block {
+            width: 100%;
+            position: relative;
+            left: auto;
+            bottom: auto;
+            transform: none;
+        }
+
+    }
+
+    .top {
+        display: none;
+    }
+
+    .vectors {
+        display: none;
+    }
+
+    .promo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__photo-man {
+            max-width: 100%;
+        }
+
+        &__list {
+            justify-content: start;
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__name {
+            font-size: 40px;
+        }
+
+        &__timer {
+            font-size: 20px;
+        }
+
+        &__bottom {
+            flex-direction: column;
+        }
+
+        &__price-img {
+            margin-bottom: 20px;
+        }
+
+        &__price-var {
+            margin-bottom: 20px;
+        }
+
+        &__price-old {
+            font-size: 25px;
+        }
+
+        &__price-new {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .header__main-img {
+        width: 150px;
+    }
+
+    .promo__text {
+        display: none;
+    }
+}

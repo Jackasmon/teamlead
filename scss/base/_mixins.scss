@@ -1,0 +1,17 @@
+@mixin btn {
+    width: 250px;
+    padding: 10px;
+    background-image: -webkit-linear-gradient(90deg, #d08e00 0, #ab612d 50%, #ffea59 100%);
+    border: none;
+    transition: all .2s ease-out;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 30px 2px #d08e00;
+    }
+}
